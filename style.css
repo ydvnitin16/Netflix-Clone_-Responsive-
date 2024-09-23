@@ -1,0 +1,716 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+.hero {
+    background-image: url(d7874679-bd47-4092-a610-f870036afdf9.jpeg);
+    background-size: cover;
+    background-position: center;
+    max-width: max(1200px, 100vw);
+    height: 90vh;
+    position: relative;
+    border-bottom: 0.3rem solid red;
+}
+
+.opacity {
+    /*this div is used for hero opacity and to align text center*/
+    height: 90vh;
+    max-width: max(1200px, 100vw);
+    background-color: black;
+    opacity: 0.77;
+}
+
+.navbar {
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 2;
+    left: 9.7%;
+    width: 80vw;
+}
+
+.logo {
+    background-image: url(Netflix_Logo_PMS.png);
+    background-size: cover;
+    height: 40px;
+    width: 150px;
+}
+
+.menu select {
+    background-color: transparent;
+    padding: 5.6px 20px 1.6px 24px;
+    font-size: 0.97rem;
+    margin-right: 10px;
+    border-radius: 4px;
+    font-weight: 500;
+    background-color: rgb(13, 13, 13);
+    border: 1px solid rgba(128, 128, 128, 0.509);
+}
+
+
+.menu .sign-in-btn {
+    display: inline-block;
+    background-color: red;
+    font-size: 0.85rem;
+    padding: 7.2px 13px 4px 17px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 90 vh;
+    position: absolute;
+    z-index: 2;
+    top: 15rem;
+    left: 25%;
+}
+
+.hero-text h1 {
+    font-size: 3.3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 125%;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.hero-text h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.log-in {
+    padding-top: 16px;
+    text-align: center;
+}
+
+.log-in input {
+    background-color: rgba(13, 13, 13, 0.737);
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 340px;
+    padding: 16px 16px 16px;
+    border: 1px solid rgba(222, 220, 220, 0.618);
+    border-radius: 4px;
+}
+
+.log-in button {
+    color: white;
+    background-color: red;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    height: 56px;
+    width: 213px;
+    margin: 3px 0px 0px 4px;
+}
+
+/* Hero's Media Queries */
+@media (max-width : 1275px) {
+    .hero {
+        height: 75vh;
+    }
+
+    .opacity {
+        height: 75vh;
+    }
+
+    .navbar {
+        width: 85vw;
+        left: 7.5%;
+    }
+
+    .hero-text {
+        height: 70vh;
+        width: 60vw;
+        top: 2rem;
+        left: 21%;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        width: 80%;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-text h3 {
+        font-size: 1rem;
+    }
+
+    .log-in input {
+        width: 323px;
+    }
+
+    .log-in button {
+        width: 176px;
+        font-size: 1.22rem;
+    }
+}
+
+@media (max-width : 960px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .opacity {
+        height: 60vh;
+    }
+
+    .navbar {
+        width: 95vw;
+        left: 2.5%;
+    }
+
+    .logo {
+        height: 24px;
+        width: 89px;
+    }
+
+    .hero-text {
+        height: 60vh;
+        width: 80vw;
+        top: 0rem;
+        left: 10%;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        width: 80%;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-text h3 {
+        width: 80%;
+    }
+
+    .log-in input {
+        width: 243px;
+    }
+}
+
+@media (max-width : 600px) {
+    .menu select {
+        padding: 7.2px 0px 4px 0px;
+    }
+
+    .hero-text {
+        height: 60vh;
+        width: 100vw;
+        top: 2rem;
+        left: 0%;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        width: 100%;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-text h3 {
+        font-size: 0.9rem;
+    }
+
+    .log-in input {
+        width: 85vw;
+        padding: 10px 16px 10px;
+    }
+
+    .log-in button {
+        width: 160px;
+        font-size: 1.12rem;
+        margin-top: 2%;
+    }
+}
+
+.main {
+    background-color: black;
+    font-family: "Segoe UI";
+    padding: 0% 10% 0% 10%;
+    position: relative;
+    z-index: 1;
+}
+
+.trending-main {
+    position: relative;
+    z-index: 2;
+    padding-top: 5%;
+    padding-bottom: 3rem;
+}
+
+.trending-main h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.trnd-sort select {
+    color: rgb(255, 255, 255);
+    background-color: rgb(13, 13, 13);
+    border: 1px solid rgba(128, 128, 128, 0.509);
+    line-height: 1.5;
+    padding-top: 0.5rem;
+    padding-right: calc(2rem + 0rem);
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    font-size: 0.87rem;
+    margin-right: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-align: center;
+}
+
+option {
+    color: black;
+    background-color: white;
+}
+
+.trnd-sort {
+    padding-bottom: 20px;
+}
+
+.trnd-mov {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+.trnd-mov li {
+    position: relative;
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
+    display: inline-block;
+    list-style: none;
+    padding: 8px 22px;
+    border-radius: 10%;
+}
+
+.movie {
+    height: 252px;
+    width: 180px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+
+}
+
+.movie-no {
+    height: 100px;
+    width: 61px;
+    position: absolute;
+    z-index: 2;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    font-size: 6.5rem;
+    left: 0;
+    bottom: 40px;
+    text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
+}
+
+.movie1 {
+    background-image: url(12th\ fail.jpg.jpeg);
+}
+
+.movie2 {
+    background-image: url(Animal.jpg.jpg);
+
+}
+
+.movie3 {
+    background-image: url(Haseen\ Dillruba.jpg.jpg);
+}
+
+.movie4 {
+    background-image: url(Kalki.jpg.jpg);
+}
+
+.movie5 {
+    background-image: url(Maharaja.jpg.jpeg);
+}
+
+.movie6 {
+    background-image: url(The\ Gray\ Man.webp);
+}
+
+.movie7 {
+    background-image: url(p16201106_b_v8_aa.jpg);
+}
+
+.movie8 {
+    background-image: url(Sultan-322x439.jpg);
+}
+
+@media (max-width : 1275px) {
+    .main {
+        padding: 0% 5rem 0% 5rem;
+    }
+
+    .movie {
+        height: 196px;
+        width: 140px;
+    }
+
+    .movie-no {
+        font-size: 5rem;
+        bottom: 10px;
+    }
+}
+
+@media (max-width : 960px) {
+    .main {
+        padding: 0% 2rem 0% 2rem;
+    }
+
+    .trending-main h2 {
+        font-size: 1.12rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .trnd-sort {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trnd-sort select {
+        text-align: left;
+        margin: 0.7% 0%;
+    }
+
+    .movie {
+        height: 156px;
+        width: 112px;
+    }
+
+    .movie-no {
+        font-size: 4rem;
+        bottom: 0px;
+    }
+}
+
+@media (max-width : 600px) {
+    .main {
+        padding: 0% 1.5rem 0% 1.5rem;
+    }
+}
+
+.join-rsn {
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+.join-rsn h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.reasons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.reasons>div {
+    height: 278px;
+    width: 24.3%;
+    border-radius: 15px;
+    background: rgb(8, 5, 62);
+    background: linear-gradient(151deg, rgba(26, 32, 66, 1) 20%, rgb(30, 22, 42) 50%, rgb(32, 14, 24) 100%);
+    flex-wrap: wrap;
+    margin-top: 2%;
+    position: relative;
+}
+
+.reason div {
+    padding: 6% 5% 0px 5%;
+}
+
+.reason h3 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.9rem;
+    margin-top: 1%;
+}
+
+.reason p {
+    color: rgba(255, 255, 255, 0.759);
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    font-weight: 500;
+}
+
+.reason img {
+    position: absolute;
+    bottom: 7%;
+    right: 7%;
+    height: 55px;
+    width: 58px;
+}
+
+@media (max-width : 1260px) {
+    .reasons>div {
+        width: 49.3%;
+        height: 200px;
+        margin-top: 1.3%;
+    }
+
+    .reason div {
+        padding: 4% 5% 0px 5%;
+    }
+
+    .reason h3 {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .reason img {
+        right: 3%;
+    }
+}
+
+@media (max-width : 960px) {
+    .reasons>div {
+        width: 99%;
+        height: 181px;
+        margin-top: 0.5rem;
+    }
+
+    .reason div {
+        padding: 1rem 1.5rem 0px 1.3rem;
+    }
+
+    .reason img {
+        right: 2%;
+    }
+
+    .join-rsn h2 {
+        font-size: 1.12rem;
+        font-weight: 600;
+    }
+}
+
+.faq {
+    padding-bottom: 3rem;
+}
+
+.faq h2 {
+    font-size: 1.44rem;
+    font-weight: 600;
+    padding-bottom: 0.6%;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.44rem;
+    font-weight: 450;
+    padding: 1.3rem;
+    background-color: rgb(44, 44, 44);
+    margin-top: 0.7%;
+    align-items: center;
+}
+
+.question img {
+    height: 40px;
+    width: 40px;
+}
+
+@media (max-width : 960px) {
+    .faq h2 {
+        font-size: 1.12rem;
+    }
+
+    .question {
+        font-size: 1.12rem;
+        padding: 1.3rem;
+        margin-top: 0.5rem;
+    }
+
+    .question img {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.sign-in-btm {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 3rem;
+}
+
+.sign-in-btm h3 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding-bottom: 0.8rem;
+}
+
+.sign-in-btm input {
+    background-color: rgba(13, 13, 13, 0.737);
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 43%;
+    padding: 16px 16px 16px;
+    border: 1px solid rgba(168, 166, 166, 0.602);
+    border-radius: 4px;
+}
+
+.sign-in-btm button {
+    color: white;
+    background-color: red;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    height: 56px;
+    width: 213px;
+    margin: 3px 0px 0px 4px;
+}
+
+@media (max-width : 960px) {
+    .sign-in-btm input {
+        width: calc(90% - 180px);
+    }
+
+    .sign-in-btm button {
+        width: 180px;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width : 600px) {
+    .sign-in-btm input {
+        width: 90%;
+    }
+
+    .sign-in-btm button {
+        height: 48px;
+        width: 156px;
+        font-size: 1rem;
+        display: block;
+        margin-top: 0.7rem;
+    }
+}
+
+.footer {
+    background-color: black;
+    color: #cecaca;
+    font-family: "Segoe UI";
+    padding: 0% 9rem 6rem 9rem;
+    position: relative;
+    z-index: 1;
+}
+
+.contact {
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 0.86rem;
+    padding-top: 2%;
+    padding-bottom: 3rem;
+}
+
+.footer-links a {
+    color: #cecaca;
+    font-weight: 450;
+    margin-top: 0.77rem;
+    width: 25%;
+    text-decoration: underline;
+}
+
+.language-btm select {
+    background-color: transparent;
+    padding: 5.6px 20px 1.6px 24px;
+    font-size: 0.97rem;
+    border-radius: 4px;
+    font-weight: 500;
+    background-color: rgb(13, 13, 13);
+    border: 1px solid rgba(128, 128, 128, 0.509);
+}
+
+.netflix-india {
+    color: #cecaca;
+    font-size: 0.86rem;
+    font-weight: 400;
+    padding-top: 3rem;
+}
+
+@media(max-width : 1200px) {
+    .footer {
+        padding: 0% 5rem 6rem 5rem;
+    }
+
+    .footer-links a {
+        width: 30%;
+    }
+}
+
+@media(max-width : 960px) {
+    .footer {
+        padding: 0% 2rem 6rem 2rem;
+    }
+
+    .footer-links a {
+        width: 50%;
+    }
+}
+
+@media(max-width : 600px) {
+    .footer {
+        padding: 0% 1.5rem 6rem 1.5rem;
+    }
+
+    .footer-links a {
+        width: 90%;
+    }
+
+}
